@@ -349,3 +349,44 @@ body {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
+
+.logo-img {
+  width: 140px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.nav-left li a,
+.nav-right li a {
+  color: #bbb;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.05rem;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.nav-left li a:hover,
+.nav-right li a:hover {
+  color: #1e90ff;
+}
+
+.sticky-cta {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #1e90ff;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: background 0.3s ease;
+}
+.sticky-cta:hover {
+  background: #0077cc;
+}
