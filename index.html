@@ -1,103 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OmniExams | Welcome to OmniExams</title>
+  <title>OmniExams</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
-  <nav>
-  <img src="logo.jpeg" alt="OmniExams Logo" class="logo">
-  <div class="menu-toggle">&#9776;</div>
-    <img src="logo.jpeg" alt="OmniExams Logo" class="logo">
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="contact.html">Contact</a></li>
+  <nav class="navbar">
+    <div class="logo">OmniExams</div>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <header class="hero">
-    <h1><span id="typed-text"></span></h1><span id="typed-text"></span></h1>Welcome to OmniExams</h1>
+    <h1><span id="typed-text"></span></h1>
+    <p class="tagline">Smash your A-Levels with AI-powered revision.</p>
+    <div class="cta-buttons">
+      <a href="#features" class="btn primary">Get Started</a>
+      <a href="#how" class="btn secondary">Learn More</a>
+    </div>
   </header>
 
-  
-<main class="fade-in">
-  <section id="hero" class="hero">
-    <h1><span id="typed-text"></span></h1>
-    <p class="subheading">Master tough topics, track your progress, and study smarter — not harder.</p>
-    <a href="resources.html" class="btn">Start Free</a>
-    <a href="#how-it-works" class="btn secondary">Watch Demo</a>
-  </section>
-
-  <section id="features" class="content">
-    <h2>What Makes OmniExams Different?</h2>
-    <div class="feature-grid">
-      <div class="card">
-        <i class="fas fa-book-open fa-2x"></i>
-        <h3>Smart Question Bank</h3>
-        <p>Access curated questions by topic, exam board, and difficulty level.</p>
-      </div>
-      <div class="card">
-        <i class="fas fa-chart-line fa-2x"></i>
-        <h3>AI Progress Tracker</h3>
-        <p>Get real-time feedback and insights to improve faster.</p>
-      </div>
-      <div class="card">
-        <i class="fas fa-calendar-alt fa-2x"></i>
-        <h3>Personal Study Planner</h3>
-        <p>Tailor your revision schedule to your actual learning pace.</p>
-      </div>
-      <div class="card">
-        <i class="fas fa-layer-group fa-2x"></i>
-        <h3>Topic-by-Topic Notes</h3>
-        <p>Condensed revision notes mapped to your curriculum.</p>
-      </div>
+  <section id="features" class="section features">
+    <h2>Key Features</h2>
+    <div class="grid">
+      <div class="card"><h3>Smart Questions</h3><p>Topic-level banks tailored to your exam board.</p></div>
+      <div class="card"><h3>Progress Tracking</h3><p>Visualise your strengths, fix your weaknesses.</p></div>
+      <div class="card"><h3>Study Planner</h3><p>Build and manage a realistic revision timeline.</p></div>
     </div>
   </section>
 
-  <section id="how-it-works" class="content">
+  <section id="how" class="section steps">
     <h2>How It Works</h2>
-    <div class="steps">
-      <div class="step">
-        <span>1</span>
-        <p>Sign up for free with your email.</p>
-      </div>
-      <div class="step">
-        <span>2</span>
-        <p>Select your subjects and topics.</p>
-      </div>
-      <div class="step">
-        <span>3</span>
-        <p>Start studying with personalized tools and feedback.</p>
-      </div>
-    </div>
+    <ol>
+      <li><strong>1.</strong> Choose your subjects</li>
+      <li><strong>2.</strong> Get personalised questions & tips</li>
+      <li><strong>3.</strong> Track your readiness in real time</li>
+    </ol>
   </section>
 
-  <section id="testimonials" class="content">
-    <h2>What Students Say</h2>
-    <blockquote>"OmniExams helped me turn a C into an A* in Chemistry." – Jess, Year 13</blockquote>
-    <blockquote>"It’s like having a private tutor in your pocket." – Umar, Year 12</blockquote>
+  <section id="contact" class="section contact">
+    <h2>Stay in the loop</h2>
+    <form id="contact-form">
+      <input type="email" placeholder="you@example.com" required />
+      <button type="submit">Join Waitlist</button>
+    </form>
   </section>
 
-  <section class="content call-to-action">
-    <h2>Ready to finally feel confident walking into your exam?</h2>
-    <a href="resources.html" class="btn">Join OmniExams Now</a>
-  </section>
-</main>
-
-
-  <footer>
+  <footer class="footer">
     <p>&copy; 2025 OmniExams Ltd.</p>
   </footer>
 
-  <script src="script.js" defer></script>
-<button id="themeToggle">Toggle Theme</button>
+  <script src="script.js"></script>
 </body>
 </html>
