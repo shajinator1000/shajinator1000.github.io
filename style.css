@@ -13,10 +13,19 @@ nav {
   background: #141414;
   color: #fff;
   padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav .logo {
-  width: 120px;
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+.menu-toggle {
+  display: none;
 }
 
 nav ul {
@@ -35,7 +44,7 @@ nav ul li a.active {
 }
 
 header.hero {
-  background: #1e90ff;
+  background: linear-gradient(to right, #1e90ff, #007BFF);
   color: white;
   text-align: center;
   padding: 5rem 1rem;
@@ -48,6 +57,20 @@ header.hero {
   border-radius: 8px;
   font-weight: bold;
   text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  background: #0f78d1;
+  color: white;
+  transform: scale(1.05);
+}
+
+.btn.secondary {
+  background: #ffffff;
+  color: #007BFF;
+  border: 2px solid #007BFF;
+  margin-left: 1rem;
 }
 
 section.highlight, section.content {
@@ -87,7 +110,6 @@ footer {
   margin-top: 2rem;
 }
 
-/* Animation classes */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -99,43 +121,25 @@ footer {
   transform: translateY(0);
 }
 
-.btn:hover {
-  background: #0f78d1;
-  color: white;
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
-/* Loading Spinner */
-#loading {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: white;
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.loader {
-  border: 8px solid #f3f3f3;
-  border-top: 8px solid #1e90ff;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    background: #141414;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 100%;
+    display: none;
   }
-}
 
-/* Parallax effect */
-.parallax {
-  background: url('https://source.unsplash.com/1600x400/?education,books') no-repeat center center fixed;
-  background-size: cover;
-  height: 300px;
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+  }
 }

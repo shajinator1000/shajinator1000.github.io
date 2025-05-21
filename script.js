@@ -1,9 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Hide loading spinner
-  const loader = document.getElementById("loading");
-  if (loader) loader.style.display = "none";
-
-  // Form alert
   const form = document.querySelector("form");
   if (form) {
     form.addEventListener("submit", function (e) {
@@ -12,9 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Fade-in animation on scroll
   const fadeEls = document.querySelectorAll(".fade-in");
-
   function revealOnScroll() {
     const triggerBottom = window.innerHeight * 0.9;
     fadeEls.forEach(el => {
@@ -27,4 +20,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", revealOnScroll);
   revealOnScroll();
+
+  const toggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector("nav ul");
+  if (toggle && navMenu) {
+    toggle.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
+  }
+
+  if (window.Typed) {
+    new Typed('#typed-text', {
+      strings: ['Welcome to OmniExams', 'Master A-Level Chemistry', 'Smash Your Exams with AI'],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  }
 });
