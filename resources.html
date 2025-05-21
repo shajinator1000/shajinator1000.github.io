@@ -3,6 +3,8 @@
 <head>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>OmniExams | Free Learning Resources</title>
@@ -22,11 +24,35 @@
   </nav>
 
   <header class="hero">
-    <h1><span id="typed-text"></span></h1>Free Learning Resources</h1>
+    <h1><span id="typed-text"></span></h1><span id="typed-text"></span></h1>Free Learning Resources</h1>
   </header>
 
-  <main class="fade-in">
+  <main class="fade-in" class="fade-in">
     <section class="content">
+<section class="tabs fade-in">
+  <h2>Explore Resources</h2>
+  <div class="tab-buttons">
+    <button class="tab-btn active" data-tab="tab1">Chemistry</button>
+    <button class="tab-btn" data-tab="tab2">Biology</button>
+    <button class="tab-btn" data-tab="tab3">Physics</button>
+  </div>
+  <div class="tab-content" id="tab1">Topic-specific notes, practice papers, and mark schemes for Chemistry.</div>
+  <div class="tab-content hidden" id="tab2">Detailed Biology resources and learning trackers.</div>
+  <div class="tab-content hidden" id="tab3">Concept-driven resources for mastering A-Level Physics.</div>
+</section>
+
+<section class="faq fade-in">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <button class="faq-question">What is OmniExams?</button>
+    <div class="faq-answer hidden">OmniExams is a smart exam revision platform tailored for A-Level students.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">Is it free to use?</button>
+    <div class="faq-answer hidden">Yes! All core features are free for students.</div>
+  </div>
+</section>
+
       <p>Coming soon...</p>
     </section>
   </main>

@@ -3,6 +3,8 @@
 <head>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>OmniExams | Contact Us</title>
@@ -22,11 +24,19 @@
   </nav>
 
   <header class="hero">
-    <h1><span id="typed-text"></span></h1>Contact Us</h1>
+    <h1><span id="typed-text"></span></h1><span id="typed-text"></span></h1>Contact Us</h1>
   </header>
 
-  <main class="fade-in">
-    <section class="content">
+  <main class="fade-in" class="fade-in">
+    <section class="content fade-in">
+  <h2>Send us a message</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" name="name" required />
+    <input type="email" placeholder="Your Email" name="email" required />
+    <textarea placeholder="Your Message" name="message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+    <p id="formSuccess" class="hidden" style="margin-top: 1rem; color: lightgreen;">Message sent successfully!</p>
+  </form>
       <p>Coming soon...</p>
     </section>
   </main>

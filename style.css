@@ -2,16 +2,16 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #f4f4f4;
-  color: #141414;
+  background: #000000;
+  color: #ffffff;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #141414;
-  color: #fff;
+  background: #000000;
+  color: #ffffff;
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
@@ -44,15 +44,15 @@ nav ul li a.active {
 }
 
 header.hero {
-  background: linear-gradient(to right, #1e90ff, #007BFF);
+  background: #111111;
   color: white;
   text-align: center;
   padding: 5rem 1rem;
 }
 
 .btn {
-  background: white;
-  color: #1e90ff;
+  background: #ffffff;
+  color: #000000;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   font-weight: bold;
@@ -61,15 +61,15 @@ header.hero {
 }
 
 .btn:hover {
-  background: #0f78d1;
+  background: #444444;
   color: white;
   transform: scale(1.05);
 }
 
 .btn.secondary {
-  background: #ffffff;
-  color: #007BFF;
-  border: 2px solid #007BFF;
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
   margin-left: 1rem;
 }
 
@@ -77,6 +77,7 @@ section.highlight, section.content {
   padding: 2rem;
   max-width: 800px;
   margin: auto;
+  color: #dddddd;
 }
 
 form {
@@ -89,13 +90,15 @@ form {
 
 form input, form textarea {
   padding: 0.75rem;
-  border: 1px solid #ccc;
+  background: #222;
+  color: white;
+  border: 1px solid #555;
   border-radius: 4px;
 }
 
 form button {
-  background: #1e90ff;
-  color: white;
+  background: #ffffff;
+  color: #000000;
   padding: 0.75rem;
   border: none;
   border-radius: 4px;
@@ -103,7 +106,7 @@ form button {
 }
 
 footer {
-  background: #141414;
+  background: #000000;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -124,7 +127,7 @@ footer {
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
-    background: #141414;
+    background: #000000;
     position: absolute;
     right: 0;
     top: 70px;
@@ -142,4 +145,123 @@ footer {
     font-size: 1.5rem;
     color: white;
   }
+}
+
+.tabs, .faq {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #111;
+  border-radius: 8px;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+.tab-content {
+  padding: 1rem;
+  background: #222;
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-question {
+  background: #222;
+  color: #fff;
+  width: 100%;
+  padding: 0.75rem;
+  text-align: left;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.faq-answer {
+  padding: 0.75rem;
+  background: #333;
+  color: #ccc;
+  border-radius: 4px;
+}
+
+body.light-theme {
+  background: #fefefe;
+  color: #000000;
+}
+
+body.light-theme nav,
+body.light-theme footer {
+  background: #e0e0e0;
+  color: #000;
+}
+
+body.light-theme .btn {
+  background: #000;
+  color: #fff;
+}
+
+label {
+  position: absolute;
+  margin-top: -2.5rem;
+  margin-left: 0.5rem;
+  color: #888;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+label.float {
+  transform: translateY(-1.5rem);
+  font-size: 0.8rem;
+  color: #1e90ff;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+#themeToggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.6rem 1rem;
+  background: #444;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#tip {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: #ccc;
 }
