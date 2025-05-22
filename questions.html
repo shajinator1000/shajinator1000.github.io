@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>OmniExams | Question Map</title>
+  <link rel="stylesheet" href="questions.css" />
+</head>
+<body>
+  <header>
+    <h1>Past Paper Question Map</h1>
+    <input type="text" id="search" placeholder="Search topic, AO, paper..." />
+  </header>
+  <main>
+    <table id="questionTable">
+      <thead>
+        <tr>
+          <th>Topic</th>
+          <th>AO</th>
+          <th>Paper</th>
+          <th>Question</th>
+          <th>Page</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+  <script>
+    
+const questionData = [
+  { topic: "Electron Configuration", ao: "AO2", paper: "AQA 2022 P1", question: "Q3", page: 11 },
+  { topic: "Isotopes", ao: "AO1", paper: "AQA 2021 P1", question: "Q2", page: 9 },
+  { topic: "Ionic Bonding", ao: "AO1", paper: "AQA 2020 P2", question: "Q5", page: 14 },
+  { topic: "Mass Spectrometry", ao: "AO2", paper: "AQA 2022 P1", question: "Q4", page: 13 },
+  { topic: "Empirical Formula", ao: "AO1", paper: "AQA 2019 P1", question: "Q1", page: 7 }
+];
+
+  </script>
+  <script src="questions.js"></script>
+</body>
+</html>
